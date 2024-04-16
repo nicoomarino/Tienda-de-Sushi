@@ -1,0 +1,571 @@
+*{
+  font-family: 'Courier New',sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*eliminates "X" from input search*/
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/*hamburger*/
+
+.bars-menu{
+  width: 30px;
+  height: 30px;
+  scale: 0.9;
+  cursor: pointer;
+  margin-bottom: 8px;
+
+  
+}
+
+.bars-menu span{
+  display: none;
+  width: 100%;
+  height: 2.6px;
+  background: #000;
+  margin-top: 6px;
+  margin-left: 30px;
+  transform-origin: 0px 100%;
+  transition: all 600ms;
+}
+
+.activeline1-bar-menu{
+  transform: rotate(45deg) translate(-2px,2px);
+}
+
+.activeline2-bar-menu{
+ opacity: 0;
+ margin-left: -30px;
+}
+
+.activeline3-bar-menu{
+   transform: rotate(-45deg) translate(-4px,2px);
+}
+
+
+
+
+.nav-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.list{
+  display: inline-flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.dropdown{
+  display: inline-flex;
+  justify-content: center;
+  position: relative;
+}
+
+.dropdown-img{
+  cursor: pointer;
+
+}
+
+.dropdown-img:active {
+  transform: rotate(3.142rad);
+
+}
+
+.drop-item{
+  margin-left: 10px;
+  margin-right: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.a-work{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  
+}
+
+.menu-vertical{
+  position: absolute;
+  top: 30px;
+  left: -5px;
+  display: none;
+  flex-direction: column;
+  margin-left: 10px;
+  list-style: none;
+  background: #363636;
+  width: 100%;
+}
+.hz-list{
+  margin-right: 7px;
+  text-decoration: none;
+  color: #000;
+
+}
+
+.header-icons{
+  margin-right: 20px;
+}
+
+/*search bar functionality*/
+
+.search-bar-container{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+}
+
+.search-bar{
+ width: 100%;
+ height: 100%;
+ border: none;
+ outline: none;
+ font-size: 20px;
+ text-transform: uppercase;
+ padding: 25px;
+ position: relative;
+ background: #F2F2F2;
+}
+
+.open{
+  cursor: pointer;
+}
+
+.cross{
+  display: block;
+  position: absolute;
+  top: 35px;
+  right: 0;
+  margin-right: 20px;
+  cursor: pointer;
+  fill:#000;
+}
+
+.cross:hover{
+  fill:#9D0000;
+}
+
+
+/*contact section*/
+
+.contact-section{
+  margin-top: 20%;
+  width: 100%;
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*side styling contact*/
+
+.contact-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.input{
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #000;
+  margin-bottom: 40px;
+}
+
+#input2{
+  width: 455px;
+}
+
+textarea{
+  max-width: 455px;
+  max-height: 100px;
+}
+
+.snd-button{
+  padding: 7px;
+  width: 200px;
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+/*maps section*/
+
+
+.maps-section{
+  margin-top: 15%;
+  height: 700px;
+  width: 100%;
+}
+.maps-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.middle-container{
+  margin-bottom: 20px;
+}
+
+.day-container{
+  display: inline-flex;
+  margin-top: 20px;
+}
+
+.maps-right-container{
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.day-container p{
+  display: block;
+  margin-right: 50px;
+}
+
+/*side styling maps*/
+
+
+.map{
+  width: 400px;
+  height: 500px;
+  margin-left: 50px;
+}
+
+
+
+/*footer*/
+
+.footer{
+  width: 100%;
+  height: 400px;
+  background: #000;
+  color: #fff;
+}
+
+.main-footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.f-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.s-column{
+  display: block;
+  
+}
+
+.t-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.l-column{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+/*side styling footer*/
+
+.name-brand{
+  margin-bottom: 50%;
+  letter-spacing: 1px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.street-info{
+  margin-bottom: 20px;
+}
+
+.rss-logos{
+  cursor: pointer;
+}
+
+.t-column li,a{
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  margin-bottom: 3px;
+  margin-left: 10px;
+}
+
+.l-column p{
+  margin-bottom: 55px;
+  margin-right: 10px;
+}
+
+.l-column input{
+  margin-bottom: 50px;
+  width: auto;
+  padding: 5px;
+  background: none;
+  border: 1px solid #fff;
+  outline: none;
+  color: #fff;
+}
+
+.l-column input::placeholder{
+  color: #fff;
+}
+
+.l-column button{
+  width: 200px;
+  padding: 5px;
+  border-radius: 3px;
+  border:none;
+  cursor: pointer;
+  outline: none;
+}
+
+.l-column button:hover{
+  transition: .6s;
+  background:#E6E6E6;
+}
+
+
+
+
+/*media queries*/
+
+@media screen and (max-width:825px){
+
+  #hamburger{
+    display: block;
+  }
+  .list{
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  left: 0;
+  right: 0;
+  width: 100vw fit-content;
+  height: 0;
+  background: #fff;
+  list-style: none;
+  transition: 0.2s;
+  text-align: center;
+  transition: 0.5s;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.list.active{
+  height: 450px;
+  display: inline-flex;
+  opacity: 1;
+}
+
+#bug{
+  margin-bottom: 40px;
+  margin-top: -70px;
+}
+
+.drop-item,.hz-list{
+  display: block;
+  width: fit-content;
+  margin:50px 0px 0 auto;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  
+
+}
+
+.drop-item:hover,.hz-list:hover{
+  transition: .5s;
+   color: #fff;
+   background: #000;
+}
+
+.dropdown-img{
+  position: absolute;
+  top: 59px;
+  left: 75px;
+
+}
+.menu-vertical{
+  top: 70px;
+  left: 90px;
+  background: #000;
+  width: 125px;
+}
+
+.a-work{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown{
+   margin-right: 21px;
+   position: relative;
+}
+
+ .title-header{
+  font-size: 35px;
+  margin-left: 40px;
+ }
+
+}
+
+@media screen and (max-width:725px){
+  .footer{
+  height: 700px;
+}
+.main-footer-container{
+  flex-direction: column;
+
+ 
+}
+
+.f-column{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -50px;
+  margin-right: 80px;
+  margin-top: 20px;
+  
+}
+
+.t-column{
+  margin-right: 55px;
+}
+.l-column{
+ margin-bottom: 60px;
+}
+}
+
+
+@media screen and (max-width:675px){
+    body,html{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+        position: relative;
+}
+
+.maps-main-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  width: 100%;
+}
+
+.maps-right-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction:column;
+ text-align: center;
+ margin-top: -50px;
+}
+
+.map{
+  margin-top: 40px;
+  width: 70vw;
+  height: 400px;
+  margin-left: 0;
+}
+
+.day-container{
+ margin-left: 50px;
+}
+
+
+
+.day-container p{
+  display: block;
+  margin-right: 60px;
+}
+
+}
+
+@media screen and (max-width:515px){
+   .list{
+  top: 80px;
+  }
+
+  .title-header{
+  font-size: 25px;
+  margin-left: 40px;
+  text-align: center;
+ }
+
+ .header-icons{
+  margin-top: 5px;
+  padding-left: 5px;
+}
+
+.bars-menu{
+  margin-bottom: 6px;
+}
+
+}
+
+@media screen and (max-width:460px){
+  .f-row-ct{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  #input2{
+  width: 80%;
+}
+
+}
+
+@media screen and (max-width:400px){
+  .map{
+  margin-top:10px;
+}
+}
+
+@media screen and (max-width:300px){
+  .contact-title{
+    font-size: 15px;
+  }
+}
